@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechAlong Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Decorative circles -->
+  <div class="circle circle--top-left" aria-hidden="true"></div>
+  <div class="circle circle--mouse" id="mouseCircle" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main navigation">
+    <span class="nav__logo">TechAlong Labs</span>
+    <a href="#about" class="nav__link">About</a>
+    <a href="#projects" class="nav__link">Projects</a>
+    <a href="#donate" class="nav__link">Donate</a>
+    <a href="#contact" class="nav__link">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__title-group">
+        <h1 class="hero__heading">TechAlong Labs</h1>
+        <p class="hero__subheading">Innovation hub where technologists ideate, design, and develop digital solutions
+          against gender-based violence in Vancouver, BC.</p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission" id="about" aria-label="Mission">
+      <div class="mission__inner">
+        <p class="mission__lead">TechAlong Labs is a non-profit organization, centralizing scattered Metro Vancouver
+          resources to help expedite getting help.</p>
+        <p class="mission__body">According to a 2018 Statistics Canada survey, 44% of women in Canada have experienced
+          psychological, physical, or sexual violence from an intimate partner. We build digital intervention in social
+          services to make the process of getting gender-based violence support and resources easier and faster in Metro
+          Vancouver.</p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team" aria-label="Team">
+      <div class="team__inner">
+        <div class="team__text">
+          <p class="team__eyebrow">who is behind?</p>
+          <h2 class="team__heading">We are a team of dedicated digital designers and developers.</h2>
+          <p class="team__body">We believe in the power of technology to make the human experiences of being in the community better. </p>
+          <p class="team__body">As current or past Simon Fraser University students, we engage post-secondary student community by hosting conversations and workshops about trauma-informed technology.</p>
+        </div>
+        <div class="team__photos">
+          <div class="team__photo-card team__photo-card--portrait team__photo-card--tilted">
+            <img src="assets\OTAC_TeamPhoto.jpg" alt="OTAC Team members" />
+          </div>
+          <div class="team__photo-card team__photo-card--landscape team__photo-card--tilted">
+            <img src="assets\THAT_TeamPhoto.jpg" alt="THATTeam members" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects" aria-label="Projects">
+      <div class="projects__header">
+        <h2 class="projects__heading">Our Projects</h2>
+        <p class="projects__subheading">These are the projects that we are currently worked on by our dedicated team of
+          designers and developers.</p>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__image-wrap">
+            <div class="project-card__image">
+              <img src="assets\OTAC_ProductPhoto.png" alt="OTAC Product Photo" />
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">One Tap Away Chatbot</h3>
+            <p class="project-card__desc">The agent that instantly guides the users to gender-based violence support
+              resources in Metro Vancouver. Equipped with trauma-informed language. Powered by AI.</p>
+            <div class="project-card__actions">
+              <button class="chip">Coming Soon!</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image-wrap">
+            <div class="project-card__image">
+              <img src="assets\THAT_ProductPhoto.png" alt="Transition House Product Photo" />
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Transition House Availability Tracker</h3>
+            <p class="project-card__desc">Web application that allows transition houses across BC update their
+              availability status, so that anyone in the public can receive real-time updates.</p>
+            <div class="project-card__actions">
+              <button class="chip">Coming Soon!</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact" aria-label="Footer">
+    <div class="footer__columns">
+
+      <div class="footer__col footer__col--wide">
+        <p class="footer__eyebrow">we are proud client of</p>
+        <img src="assets\Chang Logo White.png" alt="SFU Chang Institute" class="footer__partner-logo" />
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__eyebrow">contact us</p>
+        <a href="mailto:info@techalonglabs.com" class="footer__link">info@techalonglabs.com</a>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/techalong-labs" aria-label="LinkedIn" target="_blank"class="footer__social-icon">
+            <img src="assets\linkedin-icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__eyebrow">navigation</p>
+        <a href="#about" class="footer__link">About Us</a>
+        <a href="#donate" class="footer__link">Donate</a>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__eyebrow">projects</p>
+        <a href="#projects" class="footer__link">One Tap Away Chatbot</a>
+        <a href="#projects" class="footer__link">Transition House Availability Tracker</a>
+      </div>
+
+    </div>
+
+    <p class="footer__wordmark" aria-hidden="true">TechAlong Labs</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
